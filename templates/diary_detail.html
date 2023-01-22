@@ -11,6 +11,7 @@
     <p>{{ diary.title }}</p>
     <p>{{ diary.text }}</p>
     <a href="{% url 'diary:diary_update' diary.pk %}">編集</a>
+    <a href="{% url 'diary:diary_delete' diary.pk %}">削除</a>
     <a href="{% url 'diary:index' %}">戻る</a>
 </body>
 </html>
